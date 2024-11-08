@@ -1,0 +1,143 @@
+body {
+    display: grid;
+    height: 100vh;
+    grid-template: auto 1fr auto / 50px 1fr auto;
+    margin: 0;
+}
+
+header {
+    background: #133C55;
+    padding: 2rem;
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    grid-row: 1;
+    width: 100%;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    margin: 0;
+}
+
+nav ul li {
+    text-align: center;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 2px solid white;
+    background-color: lightblue;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #386FA4;
+    color: white;
+    border-color: white;
+}
+
+.left-sidebar {
+    grid-column: 1 / 2;
+}
+
+main {
+    grid-column: 2 / 3;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.card {
+    background-color: #386FA4;
+    border-radius: 15px;
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.cardHeader {
+    background-color: #133C55;
+    color: white;
+    padding: 1rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.cardBody {
+    padding: 2rem;
+    color: black;
+    font-size: 2rem;
+    line-height: 1.6;
+    height: 100%;
+    text-align: center;
+}
+
+.aboutImage img {
+    width: 300px;
+    height: auto;
+    border: 2px solid #ddd;
+}
+
+.cardBody ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cardBody ul li {
+    margin-bottom: 1rem;
+}
+
+.cardBody ul li a {
+    display: block;
+    padding: 1rem 2rem;
+    background-color: lightblue;
+    color: black;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.right-sidebar {
+    grid-column: 3 / 4;
+}
+
+footer {
+    background: #133C55;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 4;
+}
+
+.left-sidebar,
+.right-sidebar {
+    padding: 1rem;
+}
