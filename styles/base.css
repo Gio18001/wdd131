@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
 body {
     display: grid;
     height: 100vh;
     grid-template: auto 1fr auto / 50px 1fr auto;
     margin: 0;
+    font-family: "Lora", serif;
 }
 
 header {
@@ -95,6 +99,7 @@ main {
     line-height: 1.6;
     height: 100%;
     text-align: center;
+    font-family: "Geist", sans-serif;
 }
 
 .aboutImage img {
