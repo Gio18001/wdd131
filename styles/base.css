@@ -137,6 +137,7 @@ main {
 
 footer {
     background: #133C55;
+    color: white;
     padding: 2rem;
     text-align: center;
     grid-column: 1 / 4;

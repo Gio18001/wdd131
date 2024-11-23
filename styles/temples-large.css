@@ -96,7 +96,7 @@ figure {
 figcaption {
     font-size: 1.2rem;
     margin-top: 8px;
-    color: grey;
+    color: black;
 }
 
 .templeImage img {
@@ -107,6 +107,7 @@ figcaption {
 
 footer {
     background: #133C55;
+    color: white;
     padding: 2rem;
     text-align: center;
     grid-column: 1 / 4;
