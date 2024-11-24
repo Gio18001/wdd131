@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.top-box {
+    background-color: #333;
+    padding: 60px;
+    text-align: center;
+}
+
+.title-box h1 {
+    color: white;
+}
+
+.image-section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.content-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.box {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.label-value-box h2 {
+    margin-bottom: 15px;
+}
+
+.labels-values {
+    display: flex;
+    gap: 20px;
+}
+
+.labels {
+    width: 50%;
+}
+
+.values {
+    width: 50%;
+}
+
+.labels p,
+.values p {
+    margin: 5px 0;
+}
+
+footer {
+    background: #133C55;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 4;
+}
+
+@media (max-width: 768px) {
+    .content-boxes {
+        flex-direction: column;
+    }
+
+    .label-value-box {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .labels-values {
+        flex-direction: row;
+    }
+
+    .labels, .values {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) {
+
+    .label-value-box {
+        position: absolute;
+        width: 20%;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: #f4f4f4;
+        text-align: center;
+    }
+
+    .label-value-box:nth-child(1) {
+        top: 30%;
+        left: 5%;
+    }
+
+    .label-value-box:nth-child(2) {
+        bottom: 30%;
+        right: 5%;
+    }
+}
