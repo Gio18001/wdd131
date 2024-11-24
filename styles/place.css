@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +7,9 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Charm", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .container {
@@ -56,6 +60,7 @@ body {
 }
 
 .labels-values {
+    font-family: Arial, sans-serif;
     display: flex;
     gap: 20px;
 }
