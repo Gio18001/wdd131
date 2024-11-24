@@ -45,9 +45,10 @@ body {
 }
 
 .box {
-    background-color: #bd5b68;
+    background-color: #133C55;
     padding: 20px;
     border-radius: 8px;
+    color: white;
 }
 
 .label-value-box h2 {
@@ -91,7 +92,7 @@ footer {
 
     .icon {
         margin-left: 10px;
-        width: 50px; /* Size of the icon */
+        width: 50px;
         height: auto;
     }
 
@@ -111,7 +112,7 @@ footer {
         width: 20%;
         padding: 20px;
         border-radius: 8px;
-        background-color: #bd5b68;
+        background-color: #133C55;
         text-align: center;
     }
 
