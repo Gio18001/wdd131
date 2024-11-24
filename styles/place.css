@@ -14,13 +14,14 @@ body {
 }
 
 .top-box {
-    background-color: #333;
+    background-color: #FFC0CB;
     padding: 60px;
     text-align: center;
 }
 
 .title-box h1 {
-    color: white;
+    color: black;
+    font-size: 50px;
 }
 
 .image-section {
@@ -44,7 +45,7 @@ body {
 }
 
 .box {
-    background-color: #f4f4f4;
+    background-color: #bd5b68;
     padding: 20px;
     border-radius: 8px;
 }
@@ -66,8 +67,7 @@ body {
     width: 50%;
 }
 
-.labels p,
-.values p {
+.labels p, .values p {
     margin: 5px 0;
 }
 
@@ -89,6 +89,12 @@ footer {
         text-align: center;
     }
 
+    .icon {
+        margin-left: 10px;
+        width: 50px; /* Size of the icon */
+        height: auto;
+    }
+
     .labels-values {
         flex-direction: row;
     }
@@ -105,8 +111,18 @@ footer {
         width: 20%;
         padding: 20px;
         border-radius: 8px;
-        background-color: #f4f4f4;
+        background-color: #bd5b68;
         text-align: center;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .label-title::after {
+        content: " \26C5";
+        font-size: 1.5rem;
+        margin-left: 10px;
     }
 
     .label-value-box:nth-child(1) {
