@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 50px 1fr 50px;
+    font-family: "Lora", serif;
+}
+
+header {
+    background: #133C55;
+    padding: 2rem;
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+}
+
+nav ul li {
+    text-align: center;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 2px solid white;
+    background-color: lightblue;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #386FA4;
+    color: white;
+    border-color: white;
+}
+
+main {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    width: 300px;
+    text-align: center;
+    margin: 16px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 767px) {
+    nav ul.show {
+        display: block;
+    }
+    nav ul {
+        display: none;
+    }
+}
+
+footer {
+    background: #133C55;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 4;
+}
