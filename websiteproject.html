@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Tucker Giovo</title>
+    <meta name="author" content="Tucker Giovo">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Tucker Giovo, Project Site">
+    <link rel="stylesheet" href="styles/websiteproject.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+
+    <!-- Header with title and navigation buttons -->
+    <header>
+        <div class="header-left">
+            <h1>Pseudoregalia Fan Site</h1>
+        </div>
+        <div class="header-right">
+            <a href="websiteproject.html"><button>Home</button></a>
+            <a href="websiteprojectabout.html"><button>About</button></a>
+            <a href="websiteprojecttechniques.html"><button>Techniques</button></a>
+        </div>
+    </header>
+
+    <!-- Main Body with two sections -->
+    <main>
+        <!-- First Section with floating image -->
+        <section class="main-box">
+            <div class="image-container">
+                <img src="images/pseudoregalia/titlecard.webp" alt="Pseudoregalia Title Card" class="floating-image">
+            </div>
+            <div class="content">
+                <h2>Pseudoregalia Game</h2>
+                <p>Pseudoregalia is a 3D platforming metroidvania game with an incredible movement system. Being a metroidvania, you begin the game with a very limited set of abilities, and are barred access from most places. As you progress in the game, you unlock new abilities that allow you to gain access to previously blocked off areas. As you gain the ability to slide, long jump, kick off walls, and more, it becomes one of the most satifying movement systems in gaming today.</p>
+            </div>
+        </section>
+
+        <!-- Second Section with stacked images and paragraphs -->
+        <section class="secondary-box">
+            <div class="left-column">
+                <img src="images/pseudoregalia/completemapAndresofAstora.webp" alt="Full Map Credit: AndresofAstora">
+                <img src="images/pseudoregalia/screenshot001kotaku.webp" alt="Credit: Kotaku">
+            </div>
+            <div class="right-column">
+                <p>You control a goat/butler/maid/rabbit character named Sybil, and traverse a large and often confusing map while defeating enemies and solving puzzles to gain new abilities or access to new areas. There are many rooms to explore, and finding them all is a challenge in itself.</p>
+                <a href="https://store.steampowered.com/app/2365810/Pseudoregalia/">Try the game on Steam!</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer contenteditable>
+        <p>&copy; <span id="currentYear"></span> Tucker Giovo, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>

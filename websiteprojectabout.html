@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Tucker Giovo</title>
+    <meta name="author" content="Tucker Giovo">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Tucker Giovo, Project Site About">
+    <link rel="stylesheet" href="styles/websiteproject.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+
+    <!-- Header with title and navigation buttons -->
+    <header>
+        <div class="header-left">
+            <h1>About</h1>
+        </div>
+        <div class="header-right">
+            <a href="websiteproject.html"><button>Home</button></a>
+            <a href="websiteprojectabout.html"><button>About</button></a>
+            <a href="websiteprojecttechniques.html"><button>Techniques</button></a>
+        </div>
+    </header>
+
+    <!-- Main Body with two sections -->
+    <main>
+        <!-- First Section with floating image -->
+        <section class="main-box">
+            <div class="image-container">
+                <img src="images/pseudoregalia/oldtitlecard.webp" alt="Old Pseudoregalia Title Card" class="floating-image">
+            </div>
+            <div class="content">
+                <h2>Where did Pseudoregalia come from?</h2>
+                <p>Pseudoregalia began as the winner of the Metroidvania Month 19 Jam on Itch.io. Even though it started as a simple tech demo for a game jam, it gained popularity so quickly that the developer, Rittzler, decided to refine and finish it to release as a full game.</p>
+            </div>
+        </section>
+
+        <!-- Second Section with stacked images and paragraphs -->
+        <section class="secondary-box">
+            <div class="left-column">
+                <img src="images/pseudoregalia/screenshot002vykri.webp" alt="Credit: Vykari">
+            </div>
+            <div class="right-column">
+                <p>A screenshot of one of the early development areas in the game jam version. You can still play the Game Jam version today for free!</p>
+                <a href="https://rittzler.itch.io/pseudoregalia-jam">Try the free game jam version!</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer contenteditable>
+        <p>&copy; <span id="currentYear"></span> Tucker Giovo, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>

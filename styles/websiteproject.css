@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=Gowun+Dodum&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Gowun Dodum", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #d4b844;
+    color: black;
+    font-family: "Cormorant Unicase", serif;
+}
+
+.header-left h1 {
+    font-size: 2rem;
+}
+
+.header-right button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.header-right button:hover {
+    background-color: #777;
+}
+
+/* Main body section styles */
+main {
+    padding: 40px;
+    background-color: #a2a2a2;
+}
+
+/* First section with floating image */
+.main-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.image-container {
+    position: relative;
+    width: 40%;
+    margin-right: 20px;
+}
+
+.floating-image {
+    position: relative;
+    top: -30px;
+    left: -60px;
+    width: 120%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.content {
+    position: relative;
+    width: 45%;
+    max-width: 100%;
+    word-wrap: break-word;
+    left: 100px;
+}
+
+.content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 1rem;
+}
+
+/* Second section with stacked images and paragraphs */
+.secondary-box {
+    display: flex;
+    margin-top: 40px;
+    width: 75%;
+    margin: 40px auto;
+    background-color: white;
+}
+
+.left-column {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left-column img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.right-column {
+    position: relative;
+    left: 60px;
+    top: 60px;
+    width: 45%;
+    max-width: 100%;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-column p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+footer {
+    background: #d4b844;
+    color: black;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 4;
+}
